@@ -3,7 +3,7 @@ local source = {}
 
 local dbee = require("dbee")
 local handler = require("cmp-dbee.handler")
-local is_available = dbee.api.core.is_loaded() and dbee.api.ui.is_loaded()
+local is_available = dbee.is_core_loaded() and dbee.is_ui_loaded()
 
 --- Constructor for nvim-cmp source
 ---@param cfg Config
